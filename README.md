@@ -6,7 +6,8 @@ This repository contains a python script that searches for a motif in a FASTA fi
 `git clone https://github.com/BSantos04/Finding_DNA_Motifs.git` 
 # Tutorial
 `python3 {path to the python script}`
-Enter the motif you want to find: {motif}
+
+"Enter the motif you want to find:" `{motif}`
 ## Path to the Script
 It´s self-explanatory.
 
