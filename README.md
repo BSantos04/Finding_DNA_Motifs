@@ -10,7 +10,7 @@ Enter the motif you want to find: {motif}
 ## Path to the Script
 It´s self-explanatory.
 
-An example could be ´~/Finding_DNA_Motifs/Find_DNA_Motifs.py´ or, if you are already in the working directory, just ´Find_DNA_Motifs.py´
+An example could be `~/Finding_DNA_Motifs/Find_DNA_Motifs.py` or, if you are already in the working directory, just `Find_DNA_Motifs.py`.
 ## Motif 
 A DNA sequence containing only IUPAC aminoacids with at least 5 bp length.
 # License
