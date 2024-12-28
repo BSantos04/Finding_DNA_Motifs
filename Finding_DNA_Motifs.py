@@ -1,7 +1,9 @@
 import sys
 
+# Define dictionary variable to store the sequences and their respective names from the FASTA file
 fasta={}
 
+# Open the file and separate the sequences from their respective names, storing both in the dictionary previously defined
 with open(sys.argv[1]) as file:
     for line in file:
         line=line.strip()
@@ -15,7 +17,7 @@ with open(sys.argv[1]) as file:
         sequences=line
         fasta[seq_names]+=sequences
         
-        
+# Create an interactive input for the motif to ensure that the code will only run if the motif complies with the established conditions
 while True: 
     bases = ["A", "T", "C", "G"] 
     motif = input("Enter the motif you want to find:").upper().replace(" ", "")
@@ -32,9 +34,10 @@ while True:
             Value = True 
     if Value:
         break   
-          
-print("Order of values: Sequence_name   Sequence_length Motif_position  Frame\n")     
- 
+# Print a message to indicate the order of the results that will be displayed
+print("Sequence_name   Sequence_length Motif_position  Frame\n")     
+
+# Get the results of the query by searching in every frame of the sequences
 for seqs in fasta.values():
     for x in range(len(seqs) - len(motif) + 1):
         if seqs[x: x + len(motif)] == motif:
