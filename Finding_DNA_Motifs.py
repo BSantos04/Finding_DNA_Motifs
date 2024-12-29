@@ -26,10 +26,9 @@ while True:
         print("The motif must have at least 5 base pairs.")
         Value = False 
     else:
-        Value = True 
         if check_chars == False:
-                print("The motif must only contain the IUPAC nucleotide bases.") 
-                Value = False
+            print("The motif must only contain the IUPAC nucleotide bases.") 
+            Value = False
         else:
             Value = True 
     if Value:
